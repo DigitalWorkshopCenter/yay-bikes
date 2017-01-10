@@ -1,0 +1,41 @@
+{
+  "name": "javascript-level-1",
+  "version": "1.0.0",
+  "description": "Starter JavaScript Project using Babel, Webpack, and Gulp.",
+  "scripts": {
+    "build": "gulp build --production",
+    "start": "gulp start"
+  },
+  "keywords": [
+    "babel",
+    "gulp",
+    "webpack"
+  ],
+  "author": "Daniel Walker <plaxdan@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.0.14",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.14",
+    "css-loader": "^0.21.0",
+    "del": "^2.0.2",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.0",
+    "gulp-open": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.10.1",
+    "os": "^0.1.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "bulma": "^0.2.1",
+    "font-awesome": "^4.6.3",
+    "font-awesome-webpack": "0.0.4"
+  }
+}

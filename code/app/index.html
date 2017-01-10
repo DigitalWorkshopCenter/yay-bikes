@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <section class="hero is-primary is-small is-bold">
+      <!-- Hero header: will stick at the top -->
+      <div class="hero-head">
+        <header class="nav">
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item">
+                <p class="title is-3">Yay Bikes!</p>
+              </a>
+            </div>
+            <div class="nav-right nav-menu">
+              <a class="nav-item">
+                <span class="icon">
+                  <i class="fa fa-instagram"></i>
+                </span>
+              </a>
+                <a class="nav-item">
+                  <span class="icon">
+                    <i class="fa fa-facebook"></i>
+                  </span>
+                </a>
+                  <a class="nav-item">
+                    <span class="icon">
+                      <i class="fa fa-twitter"></i>
+                    </span>
+                  </a>
+              <span class="nav-item">
+                <a class="button is-primary is-inverted">
+                  <span class="icon">
+                    <i class="fa fa-phone"></i>
+                  </span>
+                  <span>1-800 234 5678</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <nav class="level">
+            <div class="level-item has-text-centered">
+              <p class="heading">Budget</p>
+              <p id="budget" class="title">$PLACEHOLDER</p>
+            </div>
+            <div class="level-item has-text-centered">
+              <p class="heading">Inventory</p>
+              <p id="inventoryStatus" class="title">PLACEHOLDER</p>
+            </div>
+            <div class="level-item has-text-centered">
+              <p class="heading">Profit</p>
+              <p id="profit" class="title">$PLACEHOLDER</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="box">
+            <p class="title is-3">Catalog
+              <a id="newCatalogItemButton" class="button is-light is-small is-pulled-right">
+                <span class="icon is-small">
+                  <i class="fa fa-plus"></i>
+                </span>
+                <span>New</span>
+              </a>
+            </p>
+            <p class="subtitle is-5">Buy products for your store.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody id="productsTable">
+                <tr>
+                  <td>PLACEHOLDER</td>
+                  <td>$25</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                      </span>
+                      <span>Buy</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>PLACEHOLDER</td>
+                  <td>$55</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                      </span>
+                      <span>Buy</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>PLACEHOLDER</td>
+                  <td>$75</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-shopping-cart"></i>
+                      </span>
+                      <span>Buy</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p class="title is-3">Inventory</p>
+            <p class="subtitle is-5">Sell products to your customers.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Inventory</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody id="inventoryTable">
+                <tr>
+                  <td>Gloves</td>
+                  <td>3</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-check"></i>
+                      </span>
+                      <span>Sell</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jersey</td>
+                  <td>5</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-check"></i>
+                      </span>
+                      <span>Sell</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shorts</td>
+                  <td>2</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-small">
+                      <span class="icon">
+                        <i class="fa fa-check"></i>
+                      </span>
+                      <span>Sell</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p class="title is-3">Sales</p>
+            <p class="subtitle is-5">Previous sales made to your customers.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Sold For</th>
+                  <th>Profit</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody id="salesTable">
+                <tr>
+                  <td>Gloves</td>
+                  <td>$45</td>
+                  <td>$20</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-outlined is-small">
+                      <span class="icon">
+                        <i class="fa fa-undo"></i>
+                      </span>
+                      <span>Refund</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Jersey</td>
+                  <td>$45</td>
+                  <td>$20</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-outlined is-small">
+                      <span class="icon">
+                        <i class="fa fa-undo"></i>
+                      </span>
+                      <span>Refund</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shorts</td>
+                  <td>$45</td>
+                  <td>$20</td>
+                  <td class="is-icon">
+                    <a class="button is-primary is-outlined is-small">
+                      <span class="icon">
+                        <i class="fa fa-undo"></i>
+                      </span>
+                      <span>Refund</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--
+    The new catalog item modal. This will become visible when the 'is-active'
+    class is applied.
+    -->
+    <div id="newCatalogItemModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">New Catalog Item</p>
+          <button class="delete cancel-new-catalog-item"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+
+            <label class="label">Name</label>
+            <p class="control has-icon has-icon-right">
+              <input id="newItemName" class="input" type="text" placeholder="Name (e.g. Gloves)">
+            </p>
+            <label class="label">Price</label>
+            <p class="control has-addons">
+              <a class="button is-disabled is-outlined">
+                <span class="icon is-small"><i class="fa fa-usd"></i></span>
+              </a>
+              <input id="newItemPrice" class="input" type="number" placeholder="Price (e.g. 25)">
+            </p>
+
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <a id="addToCatalog" class="button is-success is-large">Add to Catalog</a>
+          <a class="button cancel-new-catalog-item is-link">Cancel</a>
+        </footer>
+      </div>
+    </div>
+
+
+    <!--
+    The sales modal. This will become visible when the 'is-active' class
+    is applied.
+    -->
+    <div id="saleModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">New Sale</p>
+          <button class="delete cancel-sale"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="content">
+
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <div class="content">
+                    <p id="salePrice" class="title">Product Price</p>
+                    <p id="saleName" class="subtitle">Tall tile</p>
+                  </div>
+                </article>
+              </div>
+              <div class="tile is-vertical is-4">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification">
+                      <p id="saleMarkup" class="title">MARKUP %</p>
+                      <p class="subtitle">Markup</p>
+                    </article>
+                    <article class="tile is-child notification is-warning">
+                      <p  id="saleTotal" class="title">$ TOTAL SALE</p>
+                      <p class="subtitle">Total</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <a id="chargeIt" class="button is-success is-large">Charge It!</a>
+          <a class="button cancel-sale is-link">Cancel transaction</a>
+        </footer>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Yay Bikes</strong> is a JavaScript experiment by <a href="http://digitalworkshopcenter.com/">The Digital Workshop Center</a>.
+            <br/>
+          </p>
+        </div>
+        <pre id="debugState" style="white-space:pre-wrap;"/>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>

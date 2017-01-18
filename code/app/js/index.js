@@ -56,6 +56,14 @@ var debugState = function(state) {
   stateElement.innerText = JSON.stringify(state, null, '  ');
 }
 
+var displayBudget = function(state) {
+  // TODO
+  // 1. Get the budget out of the state
+
+  // 2. Get a reference to the budget area of the web page
+
+  // 3. Print the budget to the web page.
+}
 
 /**
  * Display the UI components based on the current state.
